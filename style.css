@@ -1,0 +1,14 @@
+
+body{
+    background-color: green;
+  
+}
+
+p{
+    color : rgba(255,0,0,1);
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    /* opacity: 1; */
+    
+}
+
