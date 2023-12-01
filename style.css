@@ -1,14 +1,58 @@
 
-body{
-    background-color: green;
-  
+*{
+    background-color: darkorange;
+    padding:0px;
+    margin: 0px;
+    font-size: 20px;
 }
 
-p{
+
+/* body{
+    background-color: green;
+  
+} */
+
+/* element selector  */
+/* p{
     color : rgba(255,0,0,1);
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
-    /* opacity: 1; */
+    opacity: 1;
     
+} */
+
+h1{
+    color : green
 }
 
+#firstParagraph{
+
+    color : red;
+    border: 1px solid white;
+    margin : 120px 30px ;
+    padding : 20px 10px 40px 2px;
+    text-align: center;
+
+}
+#byeWorld{
+    color : blue;
+    text-align: center;
+}
+
+
+#secondParagraph{
+    color : red
+}
+
+.secondParagraph{
+    color : violet
+}
+
+.loginButton{
+    background-color: white;
+    padding:12px;
+    margin: 20px;
+    margin-left: 800px;
+    margin-top: 100px;
+    /* text-align: center; */
+}
