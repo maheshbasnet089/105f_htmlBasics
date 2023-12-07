@@ -1,0 +1,41 @@
+
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+
+.container{
+    background-color: bisque;
+    height: 75vh;
+    display: flex;
+    border:2px solid red
+}
+.container2{
+    background-color: cadetblue;
+    height : 200vh
+}
+
+.item{
+    height  : 150px;
+    width: 150px;
+    margin-bottom: 5px;
+}
+
+.item1{
+    background-color: blue;
+}
+.item2{
+    background-color: green;
+
+ 
+}
+.item3{
+    background-color: red;
+}
+
+.item4{
+    background-color: yellow;
+    position : sticky;
+    top:60px
+}
