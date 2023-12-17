@@ -1,0 +1,43 @@
+
+:root{
+    --name : "Manish"
+}
+
+.div1{
+    background-color: red;
+}
+
+.div2{
+    background-color: yellow;
+}
+
+.div3{
+    background-color: blue;
+}
+
+p{
+    background-color: brown;
+    display: block;
+    height: 200px;
+}
+
+span{
+    background-color: green;
+  
+ 
+}
+img{
+
+display: block;
+}
+p::before{
+    content: var(--name) ;
+    color: blue;
+    font-size: 120px;
+}
+
+p::after{
+    content: var(--name);
+    color: blue;
+    font-size: 120px;
+}
