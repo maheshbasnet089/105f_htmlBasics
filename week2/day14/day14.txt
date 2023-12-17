@@ -1,0 +1,7 @@
+TODO : 
+Display 
+block level element -- width full linxa,new line ma jharxa e.g. p,div
+inline element -- width full lidaena, content jati xa teti nahi width huncha,
+same line ma insert hunchha  e.g span
+inline-block --  eutae linae ma insert hunchha , height rw width pani set garna milyo 
+
