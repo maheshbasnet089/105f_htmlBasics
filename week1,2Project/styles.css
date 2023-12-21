@@ -30,9 +30,11 @@ nav ul{
     display: flex;
     font-size: 2rem;
     justify-content: space-evenly;
+    padding-top: 1rem;
 }
 nav ul li{
-    color: var(--lightColor)
+    color: var(--lightColor);
+    transition: color .4s ease-out;
 }
 
 nav ul li:hover{
@@ -140,6 +142,7 @@ nav h1 span{
     background-color:  #7b72d0;
     line-height: 2rem;
     border-radius: 25% 10%;
+    transition: background-color .6s ease-in-out;
 }
 .services div img{
     height: 6rem;
@@ -167,3 +170,180 @@ nav h1 span{
     cursor: pointer;
     background-color: #7d78b3;
 }
+
+
+#projects{
+    height: 100vh;
+    width: 100%;
+    padding: 0rem 3rem;
+}
+
+#contact{
+   
+    height: 100vh;
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+}
+.contactLeft{
+ 
+    height: 100%;
+    width: 25%;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactRight{
+
+    height: 100%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+.contactForm{
+    max-width: 40rem;
+    width: 100%;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: .8rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+label{
+    display:block;
+    font-weight: bold;
+    margin-bottom: .6rem;
+}
+
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: .4rem;
+    margin-bottom: .5rem;
+}
+button{
+    background-color: var(--primaryColor);
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: .4rem;
+    cursor: pointer;
+    transition: background-color .4s ease-in-out;
+}
+button:hover{
+    background-color: #7d78b3;;
+}
+.button {
+    background: none;
+    border: none;
+  }
+  
+  .button .bloom-container {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    background: none;
+  }
+  
+  .button .bloom-container .button-container-main {
+    width: 110px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    place-content: center;
+    border-right: 5px solid white;
+    border-left: 5px solid rgba(128, 128, 128, 0.147);
+    transform: rotate(-45deg);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button .bloom-container .button-container-main .button-inner {
+    height: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.5) -10px 5px 10px 0px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button .bloom-container .button-container-main .button-inner .back {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: linear-gradient(60deg, rgb(1, 85, 103) 0%, rgb(147, 245, 255) 100%);
+  }
+  
+  .button .bloom-container .button-container-main .button-inner .front {
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    background: linear-gradient(60deg, rgb(0, 103, 140) 0%, rgb(58, 209, 233) 100%);
+    display: grid;
+    place-content: center;
+  }
+  
+  .button .bloom-container .button-container-main .button-inner .front .svg {
+    fill: #ffffff;
+    opacity: 0.5;
+    width: 30px;
+    aspect-ratio: 1;
+    transform: rotate(45deg);
+    transition: all 0.2s ease-in;
+  }
+  
+  .button .bloom-container .button-container-main .button-glass {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.888) 100%);
+    transform: translate(0%, -50%) rotate(0deg);
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button .bloom-container .bloom {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    background: white;
+  }
+  
+  .button .bloom-container .bloom1 {
+    top: 10px;
+    right: 20px;
+    box-shadow: rgb(255, 255, 255) 0px 0px 10px 10px, rgb(255, 255, 255) 0px 0px 20px 20px;
+  }
+  
+  .button .bloom-container .bloom2 {
+    bottom: 10px;
+    left: 20px;
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 10px 10px, rgba(255, 255, 255, 0.5) 0px 0px 30px 20px;
+  }
+  
+  .button .bloom-container:hover {
+    transform: scale(1.1);
+  }
+  
+  .button .bloom-container:hover .button-container-main .button-glass {
+    transform: translate(0%, -40%);
+  }
+  
+  .button .bloom-container:hover .button-container-main .button-inner .front .svg {
+    opacity: 1;
+    filter: drop-shadow(0 0 10px white);
+  }
+  
+  .button .bloom-container:active {
+    transform: scale(0.7);
+  }
+  
+  .button .bloom-container:active .button-container-main .button-inner {
+    transform: scale(1.2);
+  }
