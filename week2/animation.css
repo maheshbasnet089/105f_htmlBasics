@@ -1,0 +1,46 @@
+/* p{
+    animation: manish 20s ease-out;
+}
+@keyframes manish{
+    0%{
+        color : blue
+    }
+    50%{
+        color : red;
+        margin-left: 300px;
+    }
+    100%{
+        color : yellow;
+        margin-left: 800px;
+        font-size: 40px;
+       
+    }
+} */
+
+.container{
+    width: 100vw;
+}
+
+.div1{
+    height: 200px;
+    width: 200px;
+   
+    border: 2px solid red;
+    animation : changeBgColor 3s ease-in infinite
+}
+
+@keyframes changeBgColor{
+    0%{
+        background-color: red;
+        
+    }
+    50%{
+        background-color: blue;
+        /* margin-left: 100%; */
+        border: 50px dashed black
+    }
+    100%{
+        background-color: green;
+        /* margin-left: 0%; */
+    }
+}
