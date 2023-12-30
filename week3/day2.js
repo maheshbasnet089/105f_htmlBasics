@@ -13,7 +13,10 @@ var name3 = "Ramesh Adhikari"
 
 //ARRAY 
 var names = ['Manish Basnet','Ramesh Adhikari',12]
+var doesExist = names.includes(123)
+console.log(doesExist)
 names[0] = "Mahesh Basnet"
+
 
 // console.log(names)
 
@@ -32,7 +35,7 @@ var person1 = {
 Object.freeze(person1)
 
 person1.name = "Jitu Thakur"
-console.log(person1)
+// console.log(person1)
 // person1.age = 15
 // delete person1.address
 
