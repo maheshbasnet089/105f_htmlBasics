@@ -30,7 +30,7 @@ const sayHello2 = ()=>{
 //     console.log(a + b)
 // }
 
-// sum(5,4)
+// sum()
 
 // sum(1,2)
 
@@ -49,21 +49,135 @@ const sayHello2 = ()=>{
 //     console.log("hello " + name)
 // }
 // hello()
-
-var numbers = [1,2,3,4,5,6,7,8,9,10]
-
 // var squares = []
 //  numbers.forEach((manish)=>{
 //     squares.push(manish * manish)
 // })
 // console.log(squares)
 
-const squares = numbers.map((number)=>{
-    return number * 5
+
+
+// const squares = numbers.map((number)=>{
+    //     return number * 5
+    // })
+    
+    // const evenNumber = numbers.filter((number)=>{
+        //     return number % 2 == 0
+        // })
+        
+        // console.log(evenNumber)
+        
+ var numbers = [1,2,3,4,5,6,7,8,9,10]
+ const sum = numbers.reduce((accumulator,currentValue)=>{
+    return accumulator + currentValue
+ },55)
+
+ const cartItems = [
+    {   
+        productName : "ORice",
+        productPrice : 350,
+        qty : 4,
+        haha : 'hehe',
+        huhu : "haha"
+
+    },
+    {   
+        productName : "momo",
+        productPrice : 2,
+        qty : 4,
+        haha : 'hehe',
+        huhu : "haha"
+
+    },
+    {   
+        productName : "chowmein",
+        productPrice : 2,
+        qty : 4,
+        haha : 'hehe',
+        huhu : "haha"
+
+    },
+    {   
+        productName : "ORice",
+        productPrice : 350,
+        qty : 4,
+        haha : 'hehe',
+        huhu : "haha"
+
+    },
+    {   
+        productName : "ORice",
+        productPrice : 350,
+        qty : 4,
+        haha : 'hehe',
+        huhu : "haha"
+
+    },
+    {   
+        productName : "ORice",
+        productPrice : 350,
+        qty : 4,
+        haha : 'hehe',
+        huhu : "haha"
+
+    }
+    
+ ]
+ 
+ const newCartItems = cartItems.map((item)=>{
+   
+    return {
+        manish : item.productName,
+        productPrice : item.productPrice * 2,
+        qty: item.qty
+    }
+ })
+//  console.log(newCartItems)
+
+ const totalPrice = cartItems.reduce((accumulator,currentProduct)=>{
+        return accumulator + currentProduct.productPrice
+ },0)
+
+ const totalQty = cartItems.reduce((accumulator,currentProduct)=>{
+    return accumulator + currentProduct.qty
+ },0)
+
+//  console.log(totalPrice)
+//  console.log(totalQty)
+
+
+const haha = cartItems.filter((item)=>{
+    return item.productPrice === 2 && item.productName === "momo"
 })
 
-const evenNumber = numbers.filter((number)=>{
-    return number % 2 == 0
-})
-console.log(evenNumber)
+// ES6
 
+// console.log(haha)
+
+
+// var name = "manish" 
+// let name = "manish"
+// const name = "manish"
+
+// require ("packagename") - 
+// module.exports = name
+
+// import "packagName"
+// export const name 
+const name = "Mahesh Basnet"
+const {age,name:nayaname,helloworld} = {
+    name : "Manish basnet",
+    age : 21,
+    helloworld : "hello"
+     
+}
+console.log(nayaname)
+
+
+const [names] = ["Manish basnet","Maesh Basnet"]
+console.log(age,name)
+console.log(names)
+
+const numbers2 = [1,2,3,4]
+const numbersCopy = [...numbers2]
+console.log(numbersCopy)
