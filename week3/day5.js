@@ -1,4 +1,4 @@
-
+//day-21 learning about the reduce,map and ES6
 
 // var names = ["Manish" , "Mahesh", "Jitu"]
 
